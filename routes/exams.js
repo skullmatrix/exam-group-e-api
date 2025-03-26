@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-// sample datas
+// Sample Data
 let exams = [
   { 
     id: 1, 
@@ -19,5 +19,7 @@ let exams = [
 
 // tejares-get
 router.get('/', (req, res) => {
-  rejoin(exams);
+  res.json(exams);
 });
+
+module.exports = router;
