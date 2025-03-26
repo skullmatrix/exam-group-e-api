@@ -22,4 +22,14 @@ router.get('/', (req, res) => {
   res.json(exams);
 });
 
+// go-post
+router.post('/', (req, res) => {
+    const newExam = {
+      id: exams.length + 1,
+      ...req.body
+    };
+    exams.push(newExam);
+    res.status(201).json(newExam);
+  });
+
 module.exports = router;
