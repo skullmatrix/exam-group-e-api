@@ -5,6 +5,8 @@ const examRoutes = require('./routes/exams');
 const app = express();
 const PORT = process.env.PORT || 1569;
 
+//added a comment for a sample conflict
+
 // Middleware
 app.use(bodyParser.json());
 
